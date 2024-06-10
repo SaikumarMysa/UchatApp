@@ -1,0 +1,16 @@
+<h1>Login</h1>
+<%  
+if(typeof message !== 'undefined'){
+    %>
+<p style="color:red;"><%= message %></p>
+    <%
+}
+%>
+<form action="" method="POST" enctype="application/x-www-form-urlencoded">
+<input type="email" name="email" placeholder="Enter your email" required>
+<br><br>
+<input type="password" name="password" placeholder="Enter your password" required>
+<br><br>
+<input type="submit" value="login">
+</form>
+
